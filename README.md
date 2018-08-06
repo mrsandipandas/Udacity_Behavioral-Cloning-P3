@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./images/cnn-architecture.png "Model Visualization" {:height="36px" width="36px"}
+[image1]:(./images/cnn-architecture.png "Model Visualization"){:height="36px" width="36px"}
 [image2]: ./examples/placeholder.png "Grayscaling"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
@@ -46,7 +46,7 @@ python drive.py model.h5
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works. My architecture is based on Nvidia [Pilotnet](https://arxiv.org/pdf/1704.07911.pdf). Here is a sneak peek into the Nvidia architecture.
 
-![CNN architecture used for training the model][image1] {:height="200px" width="50px"}
+![CNN architecture used for training the model][image1]{:height="50%" width="50%"}
 
 ### Model Architecture and Training Strategy
 
