@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]:(./images/cnn-architecture.png "Model Visualization"){:height="36px" width="36px"}
+[image1]: ./images/cnn-architecture.png "Model Visualization"
 [image2]: ./examples/placeholder.png "Grayscaling"
 [image3]: ./examples/placeholder_small.png "Recovery Image"
 [image4]: ./examples/placeholder_small.png "Recovery Image"
