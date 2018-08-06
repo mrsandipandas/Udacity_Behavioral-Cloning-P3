@@ -4,7 +4,7 @@
 
 **Behavioral Cloning Project**
 
-The goals / steps of this project are the following:
+The goals/steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
 * Build, a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
@@ -46,7 +46,7 @@ python drive.py model.h5
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works. My architecture is based on Nvidia [Pilotnet](https://arxiv.org/pdf/1704.07911.pdf). Here is a sneak peek into the Nvidia architecture.
 
-![CNN architecture used for training the model][images/cnn-architecture.png]{:height="10px" width="10px"}
+![CNN architecture used for training the model][image1]
 
 ### Model Architecture and Training Strategy
 
