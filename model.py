@@ -6,8 +6,8 @@ import sklearn
 from sklearn.model_selection import train_test_split
 import numpy as np
 
-csvfile = './data/record/driving_log.csv'
-imgfolder = './data/record/IMG/'
+csvfile = './record/driving_log.csv'
+imgfolder = './record/IMG/'
 
 # Read driving_log.csv into an array of lines of text
 # Each line of lines is an array with format
@@ -20,6 +20,7 @@ def loaddata (csvfile):
         for line in reader:
             lines.append(line)
     return lines[1:]
+
 
 def preparedata (samples):
     # On demand loading of data depending on batch sizes
@@ -52,7 +53,7 @@ def preparedata (samples):
         images.append(image_right_flipped)
         images.append(image_left_flipped)
 
-        correction = 0.065
+        correction = 0.085
         angle_center = float(sample[3])
         angle_left = angle_center + correction
         angle_right = angle_center - correction
@@ -124,16 +125,16 @@ validation_steps = np.ceil(len( validation_samples)/32).astype(np.int32)
 
 #model.fit( X_train, y_train, validation_split=0.2, shuffle=True, epochs=3, verbose = 1)
 model.fit_generator(train_generator, \
-    steps_per_epoch = train_steps, \
-    epochs=5, \
-    verbose=1, \
-    callbacks=None, 
-    validation_data=validation_generator, \
-    validation_steps=validation_steps, \
-    class_weight=None, \
-    max_q_size=10, \
-    workers=1, \
-    pickle_safe=False, \
-    initial_epoch=0)
+          steps_per_epoch = train_steps, \
+          epochs=5, \
+          verbose=1, \
+          callbacks=None, 
+          validation_data=validation_generator, \
+          validation_steps=validation_steps, \
+          class_weight=None, \
+          max_q_size=10, \
+          workers=1, \
+          pickle_safe=False, \
+          initial_epoch=0)
 
 model.save('model.h5')
