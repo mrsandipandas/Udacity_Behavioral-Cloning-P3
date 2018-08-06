@@ -106,5 +106,7 @@ Finally, a video of how the car ran in the track in autonomous mode. This was pr
 python video.py run1
 ```
 
+You can click on the image below to see the car in action in autonomous mode. Alternatively, you can also download the model.h5 and test it accordingly.
+
 [![Video autonomous mode - First track](https://img.youtube.com/vi/BfCeOCKSXAg/0.jpg)](https://www.youtube.com/watch?v=BfCeOCKSXAg)
 
